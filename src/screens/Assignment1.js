@@ -5,7 +5,7 @@ const Assignment1 = () => {
   const row2 = "My name is Jenish";
   return (
     <View>
-      <Text style={styles.CSS1}> Getting started with react native! </Text>
+      <Text style={styles.CSS1}>Getting started with react native! </Text>
       <Text style={styles.CSS2}> {row2} </Text>
     </View>
   );
