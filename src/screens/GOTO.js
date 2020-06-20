@@ -1,9 +1,9 @@
-import React from 'react';
-import {Text,StyleSheet,View} from 'react-native';
+import React from "react";
+import { Text, StyleSheet, View } from "react-native";
 
-const listScreen=function(){
-    return(
-        <Text></Text>
-    )
+const imageScreen = function () {
+  return <Text>This Is</Text>;
 };
-export default listScreen;
+
+const styles = StyleSheet.create({});
+export default imageScreen;
