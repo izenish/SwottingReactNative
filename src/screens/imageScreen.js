@@ -1,13 +1,13 @@
 import React from "react";
 import { Text, StyleSheet, View } from "react-native";
-import ImageDetails from "../components/ImageDetails";
+import ImageDetail from "../components/ImageDetail";
 // Note that components should start with capitalletters
 const imageScreen = function () {
   return (
     <View>
-      <ImageDetails imageName="Forrest" />
-      <ImageDetails imageName="Beach" />
-      <ImageDetails imageName="Mountain" />
+      <ImageDetail />
+      <ImageDetail />
+      <ImageDetail />
     </View>
   );
 };
