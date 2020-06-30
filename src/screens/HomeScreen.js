@@ -13,6 +13,10 @@ const HomeScreen = (props) => {
         title="Go to the Images"
         onPress={() => props.navigation.navigate("imgg")}
       />
+      <Button
+        title="Image Assignment"
+        onPress={() => props.navigation.navigate("imgassignment")}
+      />
       <TouchableOpacity
         onPress={() => props.navigation.navigate("AssignmentTest")}
       >

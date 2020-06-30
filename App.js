@@ -6,6 +6,7 @@ import Assignment1 from "./src/screens/Assignment1";
 import ListScreen from "./src/screens/ListScreen";
 import listExercise from "./src/screens/listExercise";
 import imageScreen from "./src/screens/imageScreen";
+import Assignment from "./src/screens/imageAssignment";
 
 const navigator = createStackNavigator(
   {
@@ -15,6 +16,7 @@ const navigator = createStackNavigator(
     Lst: ListScreen,
     ListTest: listExercise,
     imgg: imageScreen,
+    imgassignment: Assignment,
   },
   {
     initialRouteName: "Home",

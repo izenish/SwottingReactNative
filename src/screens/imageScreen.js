@@ -5,9 +5,10 @@ import ImageDetail from "../components/ImageDetail";
 const imageScreen = function () {
   return (
     <View>
-      <ImageDetail />
-      <ImageDetail />
-      <ImageDetail />
+      <ImageDetail imageName="Forrest" imagetoshow={require("../../assets/images/forest.jpg")} />
+      <ImageDetail imageName="Beach" imagetoshow={require("../../assets/images/beach.jpg")} />
+
+      {/* <ImageDetail imageSource={require("../../assets/images/beach.jpg")} /> */}
     </View>
   );
 };

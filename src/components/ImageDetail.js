@@ -2,11 +2,12 @@ import React from "react";
 import { Text, StyleSheet, View, Image } from "react-native";
 
 const ImageDetail = (props) => {
-  //   console.log(props);
+  console.log(props);
   return (
     <View>
-      <Image source={require("../../assets/images/pizza.jpg")} />
+      <Image source={props.imagetoshow} />
       <Text>{props.imageName}</Text>
+      <Text>{props.score}</Text>
     </View>
   );
 };
