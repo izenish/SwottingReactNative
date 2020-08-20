@@ -1,13 +1,21 @@
 import React from "react";
-import { Text, StyleSheet, View, TouchableOpacity } from "react-native";
-import { Button } from "react-native-elements";
+import { Button, ThemeProvider } from "react-native-elements";
+import {
+  Text,
+  StyleSheet,
+  ScrollView,
+  TouchableOpacity,
+  ImageBackground,
+} from "react-native";
 
-
+const image = { uri: "https://reactjs.org/logo-og.png" };
 const HomeScreen = (props) => {
   return (
-    <View>
+    <ScrollView style={styles.container}>
+      {/* <ImageBackground source={image} style={styles.image}> */}
       <Text style={styles.text}> HomeScreen </Text>
       <Button
+        style={styles.textButton}
         type="outline"
         title="Go to the Components"
         onPress={() => props.navigation.navigate("Components")}
@@ -25,18 +33,45 @@ const HomeScreen = (props) => {
         title="State Example"
         onPress={() => props.navigation.navigate("count")}
       />
+      <Button
+        title="Add Color"
+        type="outline"
+        onPress={() => props.navigation.navigate("addcolor")}
+      />
+      {/* <Button
+        type="outline"
+        title="Go to the Animations"
+        onPress={() => props.navigation.navigate("trans")}
+      /> */}
       <TouchableOpacity
         onPress={() => props.navigation.navigate("AssignmentTest")}
       >
         <Text>Go to The first Assignment</Text>
       </TouchableOpacity>
-    </View>
+      {/* </ImageBackground> */}
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
-  text: {
+  textButton: {
     fontSize: 30,
+    color: "red",
+  },
+  container: {
+    flexDirection: "column",
+  },
+  image: {
+    // resizeMode: "cover",
+    // justifyContent: "center",
+    height: null,
+    width: null,
+    flex: 1,
+  },
+  text: {
+    color: "grey",
+    fontSize: 30,
+    fontWeight: "bold",
   },
 });
 

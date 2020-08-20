@@ -8,6 +8,8 @@ import listExercise from "./src/screens/listExercise";
 import imageScreen from "./src/screens/imageScreen";
 import Assignment from "./src/screens/imageAssignment";
 import CounterScreen from "./src/screens/CounterScreen";
+import ColorScreen from "./src/screens/colorScreen";
+// import UseTransition from "./src/screens/UseTransition";
 
 const navigator = createStackNavigator(
   {
@@ -18,7 +20,8 @@ const navigator = createStackNavigator(
     ListTest: listExercise,
     imgg: imageScreen,
     imgassignment: Assignment,
-    count:CounterScreen,
+    count: CounterScreen,
+    addcolor: ColorScreen,
   },
   {
     initialRouteName: "Home",
