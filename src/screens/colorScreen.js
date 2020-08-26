@@ -7,7 +7,7 @@ const ColorScreen = () => {
   console.log(colors);
   //[] inside the useState because we want it to be an empty array
   return (
-    <ScrollView>
+    <View>
       <Button
         title="Add Color"
         onPress={() => {
@@ -30,7 +30,7 @@ const ColorScreen = () => {
           );
         }}
       />
-    </ScrollView>
+    </View>
   );
 };
 const randomColor = () => {

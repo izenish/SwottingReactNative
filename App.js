@@ -9,6 +9,7 @@ import imageScreen from "./src/screens/imageScreen";
 import Assignment from "./src/screens/imageAssignment";
 import CounterScreen from "./src/screens/CounterScreen";
 import ColorScreen from "./src/screens/colorScreen";
+import customColor from "./src/screens/customColor";
 // import UseTransition from "./src/screens/UseTransition";
 
 const navigator = createStackNavigator(
@@ -22,6 +23,7 @@ const navigator = createStackNavigator(
     imgassignment: Assignment,
     count: CounterScreen,
     addcolor: ColorScreen,
+    customBtn: customColor,
   },
   {
     initialRouteName: "Home",
