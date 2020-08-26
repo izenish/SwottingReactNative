@@ -26,7 +26,7 @@ const CoutnerScreen = () => {
 
 const styles = StyleSheet.create({
   txt: {
-    fontSize: 100,
+    fontSize: 70,
   },
 });
 export default CoutnerScreen;
