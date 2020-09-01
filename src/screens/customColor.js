@@ -6,7 +6,7 @@ const customColor = function () {
   const [red, setRed] = useState(0);
   const [green, setGreen] = useState(0);
   const [blue, setBlue] = useState(0);
-  console.log(red);
+
   const setColor = (color, change) => {
     //color==="red","green","blue"
     //change==+15,-15
@@ -15,7 +15,7 @@ const customColor = function () {
         red + change > 255 || red + change < 0
           ? null && console.log("outofboubds")
           : setRed(red + change);
-        break;
+        return;
 
       case "green":
         green + change > 255 || green + change < 0

@@ -38,11 +38,15 @@ const HomeScreen = (props) => {
         type="outline"
         onPress={() => props.navigation.navigate("addcolor")}
       />
+      <TouchableOpacity onPress={() => props.navigation.navigate("reducer")}>
+        <Text>Change RGB using Reducer</Text>
+      </TouchableOpacity>
       <Button
         type="outline"
         title="Variable R G B"
         onPress={() => props.navigation.navigate("customBtn")}
       />
+
       <TouchableOpacity
         onPress={() => props.navigation.navigate("AssignmentTest")}
       >
